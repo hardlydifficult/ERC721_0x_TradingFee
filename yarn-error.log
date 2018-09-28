@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js ganache-cli
+
+PATH: 
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Geth;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\lopop\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\lopop\AppData\Local\Programs\Python\Python37\;C:\Users\lopop\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Heroku\bin;C:\Users\lopop\AppData\Roaming\npm;C:\Users\lopop\AppData\Local\Programs\Fiddler;C:\Users\lopop\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;D:\3rd Party\neo-compiler\neon\bin\Release\netcoreapp1.0;C:\Program Files\Docker Toolbox;C:\Program Files\go-ipfs;;C:\Program Files\Docker Toolbox;C:\Users\lopop\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.9.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: E:\0x-nft-tradingfee\package.json: Unexpected token } in JSON at position 549
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "soliditycontracts",
+    "version": "1.1.0",
+    "scripts": {
+      "test": "./node_modules/.bin/truffle test",
+      "download_snapshot": "cross-env download --extract --strip 1 --out 0x_ganache_snapshot https://s3.amazonaws.com/testrpc-shapshots/965d6098294beb22292090c461151274ee6f9a26.zip",
+      "ganache-cli": "cross-env ganache-cli --gasLimit 10000000 --noVMErrorsOnRPCResponse --db 0x_ganache_snapshot --noVMErrorsOnRPCResponse -p 8545 --networkId 50 -m \"concert load couple harbor equip island argue ramp clarify fence smart topic\"",
+    },
+    "dependencies": {
+      "0x.js": "^1.0.3",
+      "@0xproject/web3-wrapper": "^2.0.2",
+      "abi-decoder": "^1.2.0",
+      "axios": "^0.18.0",
+      "bignumber.js": "^7.2.1",
+      "chalk": "^2.4.1",
+      "cheerio": "^1.0.0-rc.2",
+      "commander": "^2.18.0",
+      "lockfile": "^1.0.4",
+      "lodash": "^4.17.11",
+      "npm-programmatic": "0.0.10",
+      "openzeppelin-solidity": "^2.0.0-rc.2",
+      "scrypt": "^6.0.3",
+      "semver": "^5.5.1",
+      "sinon": "^6.3.4",
+      "truffle": "^4.1.14",
+      "truffle-config": "^1.0.6",
+      "truffle-core": "^4.1.14",
+      "truffle-flattener": "github:alcuadrado/truffle-flattener#master",
+      "truffle-workflow-compile": "^1.0.6",
+      "web3": "^1.0.0-beta.36",
+      "zos-lib": "^1.4.1"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "babel-register": "^6.26.0",
+      "chai": "^4.1.2",
+      "chai-as-promised": "^7.1.1",
+      "chai-bignumber": "^2.0.2",
+      "cross-env": "^5.2.0",
+      "download-cli": "^1.1.1",
+      "react": "^16.5.2",
+      "react-dom": "^16.5.2",
+      "websocket": "^1.0.26"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

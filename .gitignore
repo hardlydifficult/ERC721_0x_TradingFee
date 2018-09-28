@@ -1,0 +1,5 @@
+node_modules
+build
+/lib
+.node-xmlhttprequest-sync-*
+0x_ganache_snapshot

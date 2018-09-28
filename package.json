@@ -1,0 +1,53 @@
+{
+  "name": "soliditycontracts",
+  "version": "1.1.0",
+  "scripts": {
+    "test": "./node_modules/.bin/truffle test",
+    "download_snapshot": "cross-env download --extract --strip 1 --out 0x_ganache_snapshot https://s3.amazonaws.com/testrpc-shapshots/965d6098294beb22292090c461151274ee6f9a26.zip",
+    "ganache-cli": "cross-env ganache-cli --gasLimit 10000000 --noVMErrorsOnRPCResponse --db 0x_ganache_snapshot --noVMErrorsOnRPCResponse -p 8545 --networkId 50 -m \"concert load couple harbor equip island argue ramp clarify fence smart topic\""
+  },
+  "dependencies": {
+    "0x.js": "^1.0.5",
+    "@0xproject/base-contract": "^2.0.5",
+    "@0xproject/json-schemas": "^1.0.4",
+    "@0xproject/migrations": "^1.0.12",
+    "@0xproject/web3-wrapper": "^2.0.3",
+    "abi-decoder": "^1.2.0",
+    "axios": "^0.18.0",
+    "bignumber.js": "^7.2.1",
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.18.0",
+    "ganache-cli": "^6.1.8",
+    "lockfile": "^1.0.4",
+    "lodash": "^4.17.11",
+    "npm-programmatic": "0.0.10",
+    "openzeppelin-solidity": "^2.0.0-rc.2",
+    "scrypt": "^6.0.3",
+    "semver": "^5.5.1",
+    "sinon": "^6.3.4",
+    "truffle": "^4.1.14",
+    "truffle-config": "^1.0.6",
+    "truffle-core": "^4.1.14",
+    "truffle-flattener": "github:alcuadrado/truffle-flattener#master",
+    "truffle-workflow-compile": "^1.0.6",
+    "web3": "^1.0.0-beta.36",
+    "zos-lib": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "cross-env": "^5.2.0",
+    "download-cli": "^1.1.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "websocket": "^1.0.28"
+  }
+}
